@@ -4,6 +4,8 @@ from rest_framework.test import APIRequestFactory
 from .models import Receita
 from .serializers import ReceitaSerializer
 
+client = Client()
+
 
 # Create your tests here.
 class ReceitaTestCase(TestCase):
