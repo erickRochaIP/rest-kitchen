@@ -1,6 +1,6 @@
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^receitas/$', views.ReceitaList.as_view(), name='receita-list'),
+    path('receitas/$', views.ReceitaList.as_view(), name='receita-list'),
 ]
