@@ -5,8 +5,8 @@ API Rest usando Django
 # Vendo todas as receitas
 $ curl http://127.0.0.1:8000/receitas/
 
-# Adicionando receita
-$ curl -d "nome=nome da receita&descricao=descricao da receita" -X POST http://127.0.0.1:8000/receitas/
+# Adicionando receita do chef '4'
+$ curl -d "nome=nome da receita&descricao=descricao da receita&id_chef=4" -X POST http://127.0.0.1:8000/receitas/
 
 # Editando receita com id '4'
 $ curl -d "nome=novo nome&descricao=nova descricao" -X PUT http://127.0.0.1:8000/receitas/4/
