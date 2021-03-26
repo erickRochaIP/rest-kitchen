@@ -1,11 +1,36 @@
 # rest-kitchen
 
-Como usar essa incrível API Rest
+API Rest para receitas :cake:
+
+## Preparando o ambiente
+Antes de começar, tenha certeza de que tem instalado: [Python](https://www.python.org/), [Git](https://git-scm.com/)
+```shell
+# Clone o repositorio
+$ git clone https://github.com/erickRochaIP/rest-kitchen.git
+
+# Acesse o diretorio
+$ cd rest-kitchen
+
+# Instale as dependencias
+$ pip install -r requirements.txt
+
+# Acesse o aplicativo
+$ cd restkitchen
+
+# Rode os testes
+$ python manage.py test
+
+# Rode o servidor
+$ python manage.py runserver
+```
+## Documentação
 
 **Receitas**
 ----
 Receitas possuem id, nome, descrição e id_chef. A API permite você criar, deletar, editar e pesquisar receitas.
 * **URLs**
+
+    Base: http://127.0.0.1:8000/
     
     [GET /receitas/](#listar-receitas)
   
