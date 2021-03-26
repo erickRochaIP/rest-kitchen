@@ -14,4 +14,10 @@ class ReceitaViewSet(viewsets.ModelViewSet):
         chef = self.request.query_params.get('id_chef')
         if chef is not None:
             queryset = queryset.filter(id_chef=chef)
+        nome = self.request.query_params.get('nome')
+        if nome is not None:
+            queryset = queryset.filter(nome__contains=nome)
+        descricao = self.request.query_params.get('descricao')
+        if descricao is not None:
+            queryset = queryset.filter(descricao__contains=descricao)
         return queryset

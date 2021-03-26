@@ -11,7 +11,8 @@ $ git clone https://github.com/erickRochaIP/rest-kitchen.git
 # Acesse o diretorio
 $ cd rest-kitchen
 
-# Instale as dependencias
+# Instale as dependencias 
+# (preferencialmente em um ambiente virtual)
 $ pip install -r requirements.txt
 
 # Acesse o aplicativo
@@ -57,6 +58,10 @@ Retorna lista json com as receitas que se encaixam nos filtros de pesquisa.
   **Opcionais:**
 
     `id_chef=[integer]`
+  
+    `nome=[string]`
+  
+    `descricao=[string]`
 
 * **Resposta:**
 
@@ -77,6 +82,9 @@ Retorna lista json com as receitas que se encaixam nos filtros de pesquisa.
   
   # Vendo todas as receitas do chef '4'
   $ curl http://127.0.0.1:8000/receitas/?id_chef=4 
+  
+  # Vendo todas as receitas de 'Pão' do chef '4'
+  $ curl "http://127.0.0.1:8000/receitas/?nome=Pão&id_chef=4"
   ```
 
 **Criar receita**
