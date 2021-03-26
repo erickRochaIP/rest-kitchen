@@ -104,7 +104,7 @@ Cria uma nova receita com nome, descrição e id_chef informados. Caso não seja
     `id_chef=[integer]`
 
 * **Resposta:**
-  * **Código:** 200
+  * **Código:** 201
   * **Conteúdo:**
   ```
   {"id":9,"nome":"nome da receita","descricao":"descricao da receita","id_chef":4}
