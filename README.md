@@ -224,7 +224,7 @@ Atualiza alguns dos valores da receita com o id informado.
 
 **Deletar receita**
 ----
-
+Deleta a receita com o id informado.
 * **Parâmetros:**
   
   Nenhum
