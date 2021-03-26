@@ -6,14 +6,19 @@ Como usar essa incrível API Rest
 ----
 Receitas possuem id, nome, descrição e id_chef. A API permite você criar, deletar, editar e pesquisar receitas.
 * **URLs**
-    ```
-    GET /receitas/
-    POST /receitas/
-    GET /receitas/:id
-    PUT /receitas/:id
-    PATCH /receitas/:id
-    DELETE /receitas/:id
-    ```
+    
+    [GET /receitas/](#listar-receitas)
+  
+    [POST /receitas/](#criar-receita)
+  
+    [GET /receitas/:id](#mostrar-receita)
+  
+    [PUT /receitas/:id](#atualizar-receita)
+  
+    [PATCH /receitas/:id](#atualizar-parcialmente-receita)
+  
+    [DELETE /receitas/:id](#deletar-receita)
+    
   
 **Listar receitas**
 ----
